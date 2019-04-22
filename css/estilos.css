@@ -1,0 +1,134 @@
+body{
+  background-color: #02010a;
+  font-size: 1em;
+}
+
+.contenido{
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+}
+
+.cabecera{
+  background-color: #5b7989;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.cabecera header{
+  margin: 1vw 1vh;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.cabecera h1{
+  margin-left: 1vw;
+}
+
+.titulo{
+  text-align: left;
+}
+
+.menu{
+  text-align: right;
+
+}
+#menu-principal{
+  padding: 0;
+}
+
+#menu-principal li{
+  display: inline;
+  text-decoration: none;
+  margin-right: 1vw;
+}
+
+.ImagenCentral{
+  background-color: #82c3a6;
+  width: 100%;
+}
+
+.ImagenCentral figure{
+  text-align: center;
+}
+
+.ImagenCentral img{
+  width: 90%;
+}
+
+.ImagenSecundaria{
+  background-color: #d5c75f;
+  border: 1px solid black;
+  text-align: center;
+  ddisplay: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  width: 100%;
+}
+
+.ImagenSecundaria img{
+  width: 100%;
+}
+
+.pie-pagina{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0;
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  width: 100%;
+}
+
+.pie-pagina li{
+  display: block;
+  text-decoration: none;
+}
+
+.redes-sociales img{
+  width: 1.2em;
+}
+
+@media all and (min-width: 900px){
+  .contenido{
+    width: 900px;
+  }
+
+  .titulo, .menu{
+    width: 50%;
+  }
+
+  .paisajes, .retratos {
+    width: 50%;
+  }
+
+  .contatos, .politicas, .redes-sociales, .derechos{
+    width: 23%;
+  }
+}
+
+@media (max-width: 900px){
+  .contenido{
+    width: 100%;
+  }
+
+  .titulo, .menu{
+    width: 100%;
+    text-align: center;
+  }
+
+  .paisajes, .retratos, .contatos, .politicas, .redes-sociales, .derechos{
+    width: 100%;
+  }
+}
