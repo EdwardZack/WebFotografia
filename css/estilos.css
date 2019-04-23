@@ -100,6 +100,24 @@ body{
 .ImagenSecundaria a{
   color: black;
 }
+
+/*Contenedor Imagenes galerias*/
+.ImagenesEfectos{
+  background-color: #d5c75f;
+  border: 1px solid black;
+  text-align: center;
+  padding-bottom: 1vh;
+  ddisplay: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  width: 100%;
+}
+
+.ImagenesEfectos img{
+  width: 100%;
+}
+
 /*Footer*/
 .pie-pagina{
   background-color: #C6d5c5;
@@ -153,27 +171,43 @@ body{
   }
 }
 
-/*Animaciones transition*/
-.paisajes img{
+/*Animaciones transition Imagenes Secundarias*/
+.ImagenSecundaria>.paisajes img{
   transition-property: transform, border, box-shadow;
   transition-duration: 1s, 1s, 1s;
 }
 
-.paisajes img:hover{
+.ImagenSecundaria>.paisajes img:hover{
   transform: rotate(10deg);
   border: 2px solid black;
   box-shadow: #82c3a6;
 }
 
-.retratos img{
+.ImagenSecundaria>.retratos img{
   transition-property: transform, border, box-shadow;
   transition-duration: 1s, 1s, 1s;
 }
 
-.retratos img:hover{
+.ImagenSecundaria>.retratos img:hover{
   transform: translate(20px,-5px);
   border: 2px solid black;
   box-shadow: #82c3a6;
+}
+
+/*Efectos Imagenes Galerias*/
+.galeria:first-child img{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.galeria:nth-child(even) img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.galeria:nth-child(3) img{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
 }
 
 /*Mediaquerie todas las pantallas desde los 900px*/
@@ -188,6 +222,10 @@ body{
 
   .paisajes, .retratos {
     width: 50%;
+  }
+
+  .galeria {
+    width: 33.3%;
   }
 
   .contatos, .politicas, .redes-sociales, .derechos{
