@@ -164,7 +164,7 @@ body{
     margin-top: 150%;
   }
   60%{
-    margin-top: 5%;
+    margin-top: -5%;
   }
   100%{
     margin-top: 0%;
@@ -196,18 +196,18 @@ body{
 
 /*Efectos Imagenes Galerias*/
 .galeria:first-child img{
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
+  -webkit-filter: blur(10px) drop-shadow(2px 2px 2px #02010a);
+  filter: blur(10px) drop-shadow(2px 2px 2px #02010a);
 }
 
 .galeria:nth-child(even) img{
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+  filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
 }
 
 .galeria:nth-child(3) img{
-  -webkit-filter: sepia(90%);
-  filter: sepia(90%);
+  -webkit-filter: sepia(90%) drop-shadow(2px 2px 2px #02010a);
+  filter: sepia(90%) drop-shadow(2px 2px 2px #02010a);
 }
 
 /*Mediaquerie todas las pantallas desde los 900px*/
